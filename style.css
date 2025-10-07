@@ -81,6 +81,7 @@
     font-weight: 600;
     transition: all 0.2s;
     border: none;
+    color: black;
 }
 
 .card-btn-left {
@@ -89,6 +90,7 @@
     font-weight: 600;
     transition: all 0.2s;
     border: none;
+    color: black;
 }
 
 .card-btn-left:hover {
@@ -103,7 +105,7 @@
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @media screen and (max-width:576px) {
