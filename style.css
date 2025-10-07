@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.navbar {
+    position: sticky;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+    background-color: white;
+    top: 0;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    background-color:rgb(128, 128, 128,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);  /* Yatayda 0, dikeyde 4px kaydır, 12px bulanıklık ver, rengi %80 şeffaf siyah yap. */
+
+
+}
+
+.card-img {
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 sütun 1 fr genişliğinde olcak */
+    gap: 60px;
+    /* kartlar arası boşluk */
+    justify-items: center;
+    /* ortalama */
+    padding: 20px;
+
+}
+
+.card-btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 30px;
+    gap: 30px;
+    height: 75px;
+    
+
+}
+
+.card-description {
+    text-align: left;
+    margin-top: 10px;
+    /* Biraz boşluk ekledik */
+    text-indent: 5px;
+    padding: 5px;
+
+}
+
+.card-tittle {
+
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.card-btn-right{
+    background-color:rgb(255, 255, 0,0.6);
+     border-radius: 6px;
+     transition: all 0.2s;
+}
+.card-btn-left{
+    background-color: rgba(20, 183, 23, 0.3);
+    border-radius: 6px;
+transition: all 0.2s;
+}
+
+.card-btn-left:hover{
+   background-color: rgba(20, 183, 23, 0.6);
+    cursor: pointer;
+}
+
+.card-btn-right:hover{
+    background-color:rgb(255, 255, 0, 1);
+    cursor: pointer;
+
+}
