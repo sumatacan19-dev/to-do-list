@@ -13,14 +13,22 @@
     top: 0;
 }
 
+.navbar-btn {
+    background-color: white;
+    border: none;
+    margin: 10px 100px;
+}
+
 
 .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 350px;
-    background-color:rgb(128, 128, 128,0.2);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);  /* Yatayda 0, dikeyde 4px kaydır, 12px bulanıklık ver, rengi %80 şeffaf siyah yap. */
+    background-color: rgb(128, 128, 128, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    /* Yatayda 0, dikeyde 4px kaydır, 12px bulanıklık ver, rengi %80 şeffaf siyah yap. */
+
 
 
 }
@@ -50,14 +58,11 @@
     padding: 20px 30px;
     gap: 30px;
     height: 75px;
-    
 
 }
 
 .card-description {
     text-align: left;
-    margin-top: 10px;
-    /* Biraz boşluk ekledik */
     text-indent: 5px;
     padding: 5px;
 
@@ -67,27 +72,53 @@
 
     text-align: center;
     font-size: 18px;
-    margin: 10px;
+    margin: 0;
 }
 
-.card-btn-right{
-    background-color:rgb(255, 255, 0,0.6);
-     border-radius: 6px;
-     transition: all 0.2s;
+.card-btn-right {
+    background-color: rgb(255, 255, 0, 0.6);
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
 }
-.card-btn-left{
+
+.card-btn-left {
     background-color: rgba(20, 183, 23, 0.3);
     border-radius: 6px;
-transition: all 0.2s;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: none;
 }
 
-.card-btn-left:hover{
-   background-color: rgba(20, 183, 23, 0.6);
+.card-btn-left:hover {
+    background-color: rgba(20, 183, 23, 0.6);
     cursor: pointer;
 }
 
-.card-btn-right:hover{
-    background-color:rgb(255, 255, 0, 1);
+.card-btn-right:hover {
+    background-color: rgb(255, 255, 0, 1);
     cursor: pointer;
 
+}
+
+h1 {
+    font-size: 50px;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .navbar-btn {
+        margin: 5px 10px;
+        font-size: 14px;
+
+    }
 }
