@@ -28,6 +28,7 @@
     background-color: rgb(128, 128, 128, 0.2);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     /* Yatayda 0, dikeyde 4px kaydır, 12px bulanıklık ver, rengi %80 şeffaf siyah yap. */
+    
 
 
 
@@ -123,4 +124,27 @@ h1 {
         font-size: 14px;
 
     }
+}
+
+
+
+
+.navbar-btn-shopping-btn{
+    position: relative; /* Bu olmadan içindeki 'absolute' eleman body'e göre hizalanır! */
+    border: none;
+    background-color: white;
+    margin: 10px 100px;
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.shopping-notification{
+    position: absolute; 
+    width: 17px;         
+    height: 17px;          
+    background-color: green; 
+    border-radius: 50%; 
+    top: -6px;  
+    right: 16px; 
 }
