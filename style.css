@@ -83,6 +83,10 @@
     transition: all 0.2s;
     border: none;
     color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .card-btn-left {
@@ -145,6 +149,49 @@ h1 {
     height: 17px;          
     background-color: green; 
     border-radius: 50%; 
-    top: -6px;  
-    right: 16px; 
+    top: -7px;  
+    right: 2px; 
+    color: white;
+    text-align: center;
+}
+
+/* style.css dosyasının en altına ekle */
+
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Köşelerin yuvarlak kalmasını sağlar */
+}
+
+.cart-list-item {
+    display: flex; /* Film adını ve butonu aynı satıra getirir */
+    justify-content: space-between; /* Aralarına boşluk koyarak iki uca yaslar */
+    align-items: center; /* Dikey olarak ortalar */
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+}
+
+.cart-list-item:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333; 
+}
+.cart-container{
+    margin: 0 80px;
 }
